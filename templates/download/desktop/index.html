@@ -1,6 +1,6 @@
 {% extends "download/_base_download.html" %}
 
-{% block title %}Download Ubuntu Desktop | Download{% endblock %}
+{% block title %}Descargar Ubuntu Desktop | Descargar{% endblock %}
 
 
 {% block content %}
@@ -15,20 +15,20 @@
       <h2>Ubuntu {{lts_release_full_with_point}}</h2>
       <div class="u-equal-height p-divider">
         <div class="col-8 p-divider__block">
-          <p class="p-card__content">Download the latest LTS version of Ubuntu, for desktop PCs and laptops. LTS stands for long-term support &mdash; which means five years, until {{lts_release_eol}}, of free security and maintenance updates, guaranteed.</p>
+          <p class="p-card__content">Descargue la última versión LTS de Ubuntu, para PCs de escritorio y portátiles. LTS son las siglas de long-term support (soporte a largo plazo) &mdash; esto es cinco años, hasta {{lts_release_eol}}, de seguridad y actualizaciones de mantenimiento gratis, gatantizado.</p>
           <p class="p-card__content"><a href="https://wiki.ubuntu.com/{{lts_release_name}}/ReleaseNotes" class="p-link--external">Ubuntu {{lts_release_full}} release notes</a></p>
-          <p>Recommended system requirements:</p>
+          <p>Requisitos de sistema recomendados:</p>
           <ul class="p-list">
-            <li class="p-list__item is-ticked">2 GHz dual core processor or better</li>
-            <li class="p-list__item is-ticked">2 GB system memory</li>
-            <li class="p-list__item is-ticked">25 GB of free hard drive space</li>
-            <li class="p-list__item is-ticked">Either a DVD drive or a USB port for the installer media</li>
-            <li class="p-list__item is-ticked">Internet access is helpful</li>
+            <li class="p-list__item is-ticked">Procesador de 2 GHz dual core o superior</li>
+            <li class="p-list__item is-ticked">2 GB de memoria del sistema</li>
+            <li class="p-list__item is-ticked">25 GB de espacio libre en el disco</li>
+            <li class="p-list__item is-ticked">Un lector de DVD o un puerto USB para el medio de instalación</li>
+            <li class="p-list__item is-ticked">También es de ayuda tener acceso a Internet</li>
           </ul>
         </div>
         <div class="col-4">
           <p class="p-card__content">
-            <a class="p-button--positive is-wide js-lts-download" href="/download/desktop/thank-you?version={{lts_release_with_point}}&amp;architecture=amd64" onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'Download', 'eventAction' : 'Desktop', 'eventLabel' : '{{lts_release}}', 'eventValue' : undefined });">Download</a>
+            <a class="p-button--positive is-wide js-lts-download" href="/download/desktop/thank-you?version={{lts_release_with_point}}&amp;architecture=amd64" onclick="dataLayer.push({'event' : 'GAEvent', 'eventCategory' : 'Download', 'eventAction' : 'Desktop', 'eventLabel' : '{{lts_release}}', 'eventValue' : undefined });">Descargar</a>
             <script>
               // Contributions only work with JavaScript
               // So if we have JavaScript, send them to /contribute
@@ -37,7 +37,7 @@
               downloadLink.href = contributeUrl;
             </script>
           </p>
-          <p class="p-card__content"><a href="/download/alternative-downloads">Alternative downloads and torrents&nbsp;&rsaquo;</a></p>
+          <p class="p-card__content"><a href="/download/alternative-downloads">Descargas alternativas y torrents&nbsp;&rsaquo;</a></p>
         </div>
       </div>
     </div>
@@ -48,10 +48,10 @@
       <h2>Ubuntu {{ latest_release_with_point }}</h2>
       <div class="u-equal-height p-divider">
         <div class="col-8 p-divider__block">
-          <p class="p-card__content">The latest version of the Ubuntu operating system for desktop PCs and laptops, Ubuntu {{ latest_release_with_point }} comes with nine months, until {{latest_release_eol}}, of security and maintenance updates.</p>
-          <p class="p-card__content"><a href="https://wiki.ubuntu.com/{{latest_release_name}}/ReleaseNotes" class="p-link--external">Ubuntu {{ latest_release }} release notes</a></p>
-          <p class="p-card__content"><a href="/desktop/1710">Find out more about {{ latest_release }}&nbsp;&rsaquo;</a></p>
-          <p class="p-card__content">Recommended system requirements are the same as for Ubuntu {{lts_release_full_with_point}}.</p>
+          <p class="p-card__content">La última versión del sistema operativo Ubuntu para PCs de escritorio y portátiles, Ubuntu {{ latest_release_with_point }} viene con nueve meses, hasta {{latest_release_eol}}, de seguridad y actualizaciones de mantenimiento.</p>
+          <p class="p-card__content"><a href="https://wiki.ubuntu.com/{{latest_release_name}}/ReleaseNotes" class="p-link--external">Notas de lanzamiento de Ubuntu {{ latest_release }} </a></p>
+          <p class="p-card__content"><a href="/desktop/1710">Descubra más sobre {{ latest_release }}&nbsp;&rsaquo;</a></p>
+          <p class="p-card__content">Los requisitos del sistema recomendados son los mismos que para Ubuntu {{lts_release_full_with_point}}.</p>
         </div>
         <div class="col-4">
           <p class="p-card__content">
@@ -64,7 +64,7 @@
               downloadLink.href = contributeUrl;
             </script>
           </p>
-          <p class="p-card__content"><a href="/download/alternative-downloads">Alternative downloads and torrents&nbsp;&rsaquo;</a></p>
+          <p class="p-card__content"><a href="/download/alternative-downloads">Descargas alternativas y torrents&nbsp;&rsaquo;</a></p>
         </div>
       </div>
     </div>
@@ -74,7 +74,7 @@
 <div class="p-strip is-deep is-bordered">
   <div class="row">
     <div class="col-12">
-      <h2>Easy ways to switch to Ubuntu</h2>
+      <h2>Formas fáciles de cambiar a Ubuntu</h2>
     </div>
   </div>
 
@@ -84,10 +84,10 @@
         <div class="p-heading-icon">
           <div class="p-heading-icon__header">
             <img class="p-heading-icon__img" src="{{ ASSET_SERVER_URL }}cb3ecebb-picto-ubuntu.svg" />
-            <h3 class="p-heading-icon__title">From an older version</h3>
+            <h3 class="p-heading-icon__title">Desde una versión antigua</h3>
           </div>
         </div>
-        <p class="p-card__content">If you&rsquo;re already running Ubuntu, you can upgrade in a few clicks from <a class="p-link--external" href="https://tutorials.ubuntu.com/tutorial/tutorial-upgrading-ubuntu-desktop">Software Updater</a>.</p>
+        <p class="p-card__content">Si ya está utilizando Ubuntu, puede actualizar en unos pocos pasos desde <a class="p-link--external" href="https://tutorials.ubuntu.com/tutorial/tutorial-upgrading-ubuntu-desktop">Actualización de Software</a>.</p>
         <ul class="p-list">
           <li class="p-list__item"><a class="p-link--external" href="https://tutorials.ubuntu.com/tutorial/tutorial-burn-a-dvd-on-ubuntu">How to burn a DVD on Ubuntu</a></li>
           <li class="p-list__item"><a class="p-link--external" href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-ubuntu">How to create a bootable USB stick on Ubuntu</a></li>
@@ -98,13 +98,13 @@
         <div class="p-heading-icon">
           <div class="p-heading-icon__header">
             <img class="p-heading-icon__img" src="{{ ASSET_SERVER_URL }}08563efa-picto-windows.svg" />
-            <h3 class="p-heading-icon__title">From Windows</h3>
+            <h3 class="p-heading-icon__title">Desde Windows</h3>
           </div>
         </div>
-        <p class="p-card__content">If you&rsquo;re using Windows 8 or any computer with a 64-bit processor, we recommend the 64-bit download.</p>
+        <p class="p-card__content">Si está utilizando Windows 8 o cualquier equipo con un procesador de 64-bit, le recomendamos la descarga de 64-bit.</p>
         <ul class="p-list">
-          <li class="p-list__item"><a class="p-link--external" href="https://tutorials.ubuntu.com/tutorial/tutorial-burn-a-dvd-on-windows">How to burn a DVD on Windows</a></li>
-          <li class="p-list__item"><a class="p-link--external" href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows">How to create a bootable USB stick on Windows</a></li>
+          <li class="p-list__item"><a class="p-link--external" href="https://tutorials.ubuntu.com/tutorial/tutorial-burn-a-dvd-on-windows">Cómo grabar un DVD en Windows</a></li>
+          <li class="p-list__item"><a class="p-link--external" href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows">Cómo crear un dispositivo USB arrancable en Windows</a></li>
         </ul>
       </div>
 
@@ -112,13 +112,13 @@
         <div class="p-heading-icon">
           <div class="p-heading-icon__header">
             <img class="p-heading-icon__img" src="{{ ASSET_SERVER_URL }}4239507e-picto-mac.svg" />
-            <h3 class="p-heading-icon__title">From macOS</h3>
+            <h3 class="p-heading-icon__title">Desde macOS</h3>
           </div>
         </div>
-        <p class="p-card__content">Most Macs with Intel processors will work with either 64-bit or Mac images. If the 64-bit image doesn't work, try the Mac image.</p>
+        <p class="p-card__content">La mayoría de Macs con procesadores Intel funcionarán con imágenes 64-bit o Mac. Si la imagen 64-bit no funciona, intente con la imagen Mac.</p>
         <ul class="p-list">
-          <li class="p-list__item"><a class="p-link--external" href="https://tutorials.ubuntu.com/tutorial/tutorial-burn-a-dvd-on-macos">How to burn a DVD on macOS</a></li>
-          <li class="p-list__item"><a class="p-link--external" href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos">How to create a bootable USB stick on macOS</a></li>
+          <li class="p-list__item"><a class="p-link--external" href="https://tutorials.ubuntu.com/tutorial/tutorial-burn-a-dvd-on-macos">Cómo grabar un DVD en macOS</a></li>
+          <li class="p-list__item"><a class="p-link--external" href="https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos">Como crear un dispositivo USB arrancable en macOS</a></li>
         </ul>
       </div>
     </div>
